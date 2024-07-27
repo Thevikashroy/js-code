@@ -42,4 +42,34 @@ function loginUserMessage(username = "sam"){
 }
 
 // console.log(loginUserMessage("vikash"))
-console.log(loginUserMessage("vikash"))
+// console.log(loginUserMessage("vikash"))
+
+//... means of rest operator/sprade operator
+function calculateCartPrice(...num1){
+    return num1
+}
+// console.log(calculateCartPrice(200, 400, 500));
+
+const user = {
+    username: "Vikash",
+    prices: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+ }
+//  handleObject(user)
+handleObject({
+    username: "Vikky",
+    price: 239
+})
+
+
+const myArray = [200, 400, 100, 900]
+
+function returnSecondValue(getArray){
+    return getArray[3]
+}
+
+// console.log(returnSecondValue(myArray));
+console.log(returnSecondValue([200, 400, 100, 900]));
